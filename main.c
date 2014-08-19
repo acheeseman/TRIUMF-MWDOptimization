@@ -3,7 +3,7 @@ Waveforms contained in a .mid file can be written to a txt file using Tig-Replay
 Loops through values of the K and M parameters and calculates the energy resolution (FWHM) each iteration.
 
 To compile: gcc -lm -g -o km_optimize_14 main.c gnuplot.c gaussianCurveFit.c
-To run: ./processwaveform ../inputfile.txt ../outputfile.txt */
+To run: ./km_optimize_14 ../inputfile.txt ../outputfile.txt */
 
 #include <stdio.h>
 #include <stdlib.h>
