@@ -1,14 +1,15 @@
 TRIUMF-MWDOptimization
 ======================
 
-Author: Alison Cheeseman
+#####Author: Alison Cheeseman, 2014
 
 C code which processes waveforms contained in a .txt file and evaluates their energy using the Moving Window Deconvolution
-algorithm. The algorithm consists of three filters, a differentiation, a decay correction, and an integration. These filters
-are characterized by three parameters which influence the energy response of the system. The parameters are referred to by:
+algorithm. The algorithm consists of three filters, a differentiation, a decay correction, and an integration. These filters are characterized by three parameters which influence the energy response of the system. The parameters are referred to by:
 
 L: The differentiation width of the first filter.
+
 M: The decay constant of the preamplifier signal - used in the decay correction
+
 K: The integration time, used in the third filter (K must be less than L + the risetime of the signal)
 
 This code loops through values of the K and M parameters for a fixed value of L, producing a spectrum and calculating the
